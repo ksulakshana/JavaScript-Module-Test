@@ -1,0 +1,323 @@
+#winningdata {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 3em;
+    border-radius: 1em;
+    margin: 0;
+    padding: 1em;
+}
+#userpicked,#wininfo,#pcpicked{
+    width:25%;
+}
+#userpicked p{
+    height:auto;
+    position: relative;
+    top:2em;
+    left:3em;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 19.92px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+#pcpicked p{
+    height:auto;
+    position: relative;
+    top:2em;
+    left:0;
+    font-family: "Roboto", sans-serif;
+font-size: 17px;
+font-weight: 600;
+line-height: 19.92px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #FFFFFF;
+
+}
+.ellipse4{
+    width: 12em;
+height: 12em;
+position: relative;
+    top: 1em;
+    left: 1em;
+    background: #2E9A2563;
+    box-shadow: 0px 1px 62px 0px #00000021;
+    border-radius: 6em;
+}
+
+.ellipse3{
+    width: 10em;
+height: 10em;
+position: relative;
+    top: 1em;
+    left: 1em;
+    background: #1DA82BC9;
+    border-radius: 5em;
+}
+
+.ellipse5{
+    width: 8em;
+height: 8em;
+position: relative;
+top: 1em;
+left: 1em;
+background: #3B6720;
+border-radius: 4em;
+}
+
+.ellipse2{
+    width: 6em;
+    height: 6em;
+    position: relative;
+    top: 1em;
+    left: 1em;
+    background: #FFFFFF;
+    border: 16px solid #BD00FF;
+    box-shadow: -1px 1px 11px 0px #00000059;
+    border-radius: 3em;
+}
+
+.ellipse1 img{
+    width: 3.5em;
+    height: 3.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#youwintext{
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 39%;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 39px;
+    font-weight: 800;
+    line-height: 45.7px;
+    letter-spacing: 0.1em;
+}
+
+#tietext{
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 100%;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 39px;
+    font-weight: 800;
+    line-height: 45.7px;
+    letter-spacing: 0.1em;
+}
+
+#pctext{
+    height: auto;
+    position: relative;
+    top: 40%;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 29.3px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+#playagain,#replay{
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 43%;
+    right: 0%;
+    border-radius: 9px;
+    background: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 17.58px;
+    letter-spacing: 0.1em;
+    color: #6B6B6B;
+    padding: 1em;
+}
+
+#replay{
+    width: 60%;
+    height: auto;
+    position: relative;
+    top: 100%;
+    right: 0%;
+    border-radius: 9px;
+    background: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 17.58px;
+    letter-spacing: 0.1em;
+    color: #6B6B6B;
+    padding: 1em;
+}
+
+.pcchoose{
+    width: 8em;
+    position: relative;
+    top: 4em;
+}
+
+#rulesinfodiv {
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 6em;
+        border-radius: 1em;
+        margin: 0;
+        padding: 1em;
+}
+
+#next{
+    width: 119px;
+    height: 40px;
+    border-radius: 0.5em;
+    border: 2px;
+    background: #8CC461;
+    border: 2px solid #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 0em;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    padding: 1em;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    bottom: 0em;
+    right: 0;
+}
+
+#rulesection #rules{
+    right: 6em;
+}
+
+#rulesection #pcwinrules{
+    right: 0;
+}
+
+#hurrayrulesection{
+    display: block;
+    position: relative;
+}
+
+#trophy{
+    width:100%;
+    height:100%;
+    background: url('resources/images/stars.png') no-repeat fixed center;
+    position: fixed;
+    text-align: center;
+    background-position-y: 8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#trophy img{
+    width: 15%;
+    height: 25%;
+    display: block;
+    position: relative;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hurraytext{
+    position: relative;
+    top: 24%;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 91px;
+    font-weight: 600;
+    line-height: 106.64px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+#youwon{
+    /* height: auto; */
+    position: relative;
+    /* position: fixed; */
+    top: 22%;
+    font-family: "Roboto", sans-serif;
+    font-size: 41px;
+    font-weight: 600;
+    line-height: 48.05px;
+    letter-spacing: 0.1em;    
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#trophy #playagain{
+    width: 20%;
+    height: auto;
+    position: relative;
+    top: 24%;
+    border-radius: 1em;
+    background: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 17.58px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #6B6B6B;
+    padding: 1em;
+}
+
+#userwinrulebutton , #userwinnextbutton {
+    display:inline-block;
+    height: auto;
+    border-radius: 0.5em;
+    border: 2px;
+    background: #8CC461;
+    border: 2px solid #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 0em;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    padding: 1em;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+#congrats_rulesinfodiv{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 32rem;
+    border-radius: 1em;
+    margin: 0;
+    padding: 1em;
+}
+
+#tieddata {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 3em;
+    border-radius: 1em;
+    margin: 0;
+    padding: 1em;
+}

@@ -1,0 +1,235 @@
+*,html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: #8CC461;
+}
+
+#maincontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#scoreboard{
+    width: 75%;
+    height: 30%;
+    position: relative;
+    top: 3em;
+    border-radius: 1em;
+    border: 2px solid #FFFFFF;
+    margin: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#gamename{
+    width: 30%;
+}
+
+#gamename ul{
+    height:auto;
+}
+#gamename ul li{
+    list-style-type: none;
+    font-family: "Roboto", sans-serif;
+font-size: 40px;
+font-weight: 600;
+line-height: 46.88px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #FFFFFF;
+}
+
+#scorecard{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.scorecarddivs{
+    width: 8em;
+    height: 100%;
+    background: #FFFFFF;
+    padding: 1em;
+    text-align: center;
+    text-align-last: center;
+    color: #656565;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 19.92px;
+    letter-spacing: 0.1em;    
+    border-radius: 9px ;
+}
+
+.scorecarddivs p{
+    height: auto;
+        font-family: "Roboto", sans-serif;
+    font-weight: 700;
+
+ }
+.zero{
+    text-align: center;
+    color: #252525;
+    font-family: "Roboto", sans-serif;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 0.5em;
+    text-align: center;  
+} 
+
+#centerdata{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    height: 50%;
+    position: relative;
+    /* top: 100%; */
+    border-radius: 1em;
+    margin: 6em;
+    padding: 1em;
+    left: 10%;
+}
+
+.outeralignment{
+    width: 7em;
+    height: 7em;
+    opacity: 0px;
+    background: #FFFFFF;
+    box-shadow: -1px 1px 11px 0px #00000059;
+    border-radius: 10em;
+    position: relative;
+}
+
+#rock .outeralignment{
+    border: 16px solid #0074B6;
+}
+
+#scissor .outeralignment{
+    border: 16px solid #BD00FF;
+}
+
+#paper .outeralignment{
+    border: 16px solid #FFA943;
+}
+
+.outeralignment img{
+    width: 3.5em;
+    height: 3.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#playgame{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 45%;
+}
+.movehand{
+    width:8em;
+}
+#firstrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#secondrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#rulesection,#pcwinrulesection{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: right;
+}
+
+div #gamerules{
+    display: none;
+    width: 40%;
+    height: 20em;
+    border-radius: 13px;
+    border: 7px;
+    opacity: 0px;
+    background: #004429;
+    border: 7px solid #FFFFFF;
+}
+
+#closebox{
+    background: #FF0000;
+    border: 0.1em solid #FFFFFF;
+    width: 2em;
+    height: 2em;
+    top: -1.4em;
+    left: 1em;
+    border-radius: 1em;
+    font-family: "Dangrek", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #FFFFFF;
+    float: right;
+    position: relative;
+    text-align: center;
+}
+
+#gamerules h1{
+    width: auto;
+    height: 1em;
+    font-family: "Roboto", sans-serif;
+    font-size: 29px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0.5em;
+}
+
+#gamerules li{
+    width: 25em;
+    height: 3em;
+    top: 3em;
+    left: 2em;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.23px;
+    text-align: left;
+    color: #FFFFFF;
+    list-style-type: square;
+    margin-bottom: 1em;
+}
+
+#rules{
+    height: auto;
+    border-radius: 0.5em;
+    border: 2px;
+    background: #8CC461;
+    border: 2px solid #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 0em;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    padding: 1em;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}

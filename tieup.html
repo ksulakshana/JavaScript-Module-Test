@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper Scissors</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="userwin.css" rel="stylesheet">
+
+    <script src="scripts.js" defer></script>
+    <script src="functions.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
+</head>
+<body onload="loadtieinfo()">
+    <div id="maincontainer">
+        <div id="scoreboard">
+            <div id="gamename">
+                <ul>
+                    <li>ROCK</li>
+                    <li>PAPER</li>
+                    <li>SCISSORS</li>
+                </ul>
+            </div>
+            <div id="scorecard">
+                <div class="scorecarddivs" id="computerscore"><p>COMPUTER SCORE</p><br/><span id="computerscorevalue" class="zero">0</span></div>
+                <div class="scorecarddivs" id="userscore"><p>YOUR SCORE</p><br/><span id="userscorevalue" class="zero">0</span></div>
+            </div>
+        </div>
+        <div id="tieddata">
+            <div id="pcpicked">
+                <p>YOU PICKED</p>
+                <div class="pcchoose" id="rock">
+                    <div id="outeralignment1" class="outeralignment">
+                            <img id="userpickedimg" src="resources/images/rockicon.png">
+                    </div>
+                </div>
+            </div>
+            <div id="wininfo" style="position:relative;top:4em;">
+                <p id="tietext">TIE UP</p>
+                <button id="replay" onclick="playoncemore()">REPLAY</button>
+            </div>
+
+            <div id="userpicked">
+                <p>PC PICKED</p>
+                <div class="pcchoose" id="rock">
+                    <div id="outeralignment2" class="outeralignment">
+                            <img id="pcpickedimg" src="resources/images/rockicon.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gamerules" style="margin-left: auto;position: absolute;top: 25%;right:2%">
+            <button id="closebox" onclick="closebox()">X</button>
+            <h1>Game Rules</h1>
+            <ul>
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+        </div>
+        <div id="rulesinfodiv">
+            <!-- <div id="pcwinrulesection">
+                <button id="rules" >RULES</button>  -->
+                <div id="rulesection">
+                    <button id="userwinrulebutton" onclick="showrules()" style="position: relative;top: 4em;">RULES</button> 
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
